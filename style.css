@@ -127,6 +127,15 @@ button {
   box-shadow: 3px 3px black;
 }
 
+/* .dicount {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.discount p {
+  grid-column: 1/3;
+} */
+
 @media screen and (max-width: 830px) {
   .main-nav {
     display: inline-block;
@@ -170,4 +179,24 @@ button {
   nav {
     margin-top: 30px;
   }
+}
+
+/* PRODUCT PAGE */
+
+.product-page {
+  display: grid;
+  grid-column: 1;
+}
+
+.product-page img {
+  max-width: 40rem;
+  margin-right: auto;
+  margin-left: auto;
+  grid-column: 1/3;
+}
+
+.product-page p {
+  display: block;
+  text-align: left;
+  grid-column: 1;
 }
