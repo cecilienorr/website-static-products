@@ -23,6 +23,33 @@ p {
 .categories {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px;
+  margin-right: 15px;
+  margin-left: 15px;
+  text-align: center;
+}
+
+.headline {
+  grid-column: 1/3;
+  font-size: 30px;
+}
+
+.category {
+  width: auto;
+  height: 70px;
+  border-bottom: 1px solid black;
+  padding-top: 40px;
+}
+
+.category a {
+  text-decoration: none;
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+  color: black;
+}
+
+.category:hover {
+  background-color: pink;
 }
 
 /* PRODUCT LIST */
@@ -115,6 +142,10 @@ button {
 
   nav {
     margin-top: 30px;
+  }
+
+  .categories {
+    display: block;
   }
 }
 
