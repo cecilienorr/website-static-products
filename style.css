@@ -5,7 +5,7 @@ body {
 
 main {
   min-height: 300px;
-  display: flex;
+  display: grid;
   align-items: center;
 }
 
@@ -19,6 +19,13 @@ p {
 }
 
 /* CATEGORY LIST */
+
+.categories {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* PRODUCT LIST */
 
 .main-nav {
   display: flex;
@@ -93,4 +100,43 @@ button {
   box-shadow: 3px 3px black;
 }
 
-/* PRODUCT LIST */
+@media screen and (max-width: 830px) {
+  .main-nav {
+    display: inline-block;
+    background-color: pink;
+  }
+
+  nav a {
+    font-size: 18px;
+    padding: 4px 15px;
+    box-shadow: 3px 3px purple;
+    margin-right: 10px;
+  }
+
+  nav {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .main-nav {
+    display: block;
+    background-color: turquoise;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: black;
+    list-style: none;
+    font-family: "Playfair Display", serif;
+    font-size: 18px;
+    padding: 4px 15px;
+    background-color: pink;
+    box-shadow: 3px 3px purple;
+    margin-right: 10px;
+  }
+
+  nav {
+    margin-top: 30px;
+  }
+}
